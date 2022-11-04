@@ -32,7 +32,7 @@ void bestfit(vector<int> &blockSize, vector<int> &process, vector<int> &allocate
         for (int j = 0; j < blockSize.size(); j++)
         {
             // try to minimize the difference
-            if (blockSize[j] != 0 and process[i] <= blockSize[j] and blockSize[j] - process[i] <= diff and process[i] != 0)
+            if (blockSize[j] != 0 && process[i] <= blockSize[j] && blockSize[j] - process[i] <= diff && process[i] != 0)
             {
                 idx = j;
                 diff = blockSize[j] - process[i];
@@ -69,6 +69,7 @@ void nextFit(vector<int> &blockSize, vector<int> &process, vector<int> &allocate
         }
     }
 }
+
 int main()
 {
     int n;
